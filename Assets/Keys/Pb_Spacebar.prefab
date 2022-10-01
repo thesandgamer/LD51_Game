@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7795588543637035315}
   - component: {fileID: 6276590846116204975}
   - component: {fileID: 3527153708885491248}
+  - component: {fileID: 2667459478029576066}
   m_Layer: 0
   m_Name: Pb_Spacebar
   m_TagString: Untagged
@@ -83,3 +84,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2667459478029576066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531951428453013092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36880924925cbe4ab381466ac416865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

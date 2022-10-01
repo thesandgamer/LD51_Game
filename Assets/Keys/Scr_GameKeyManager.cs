@@ -23,8 +23,11 @@ public class Scr_GameKeyManager : MonoBehaviour
     
     private void Start()
     {
+        if (_manager)
+        {
+            voisins = _manager.DetectVoisinOf(posInKeyboard);
+        }
         baseY = transform.position.y;
-        voisins = _manager.DetectVoisinOf(posInKeyboard);
         downPos = transform.position.y - downDistance;
         hoverdedPos = transform.position.y - hoverdedDistance;
     }

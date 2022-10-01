@@ -332,6 +332,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Space"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d46d96a-4ee9-4fb9-9c71-596b5df74f79"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -708,6 +717,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""Exclamation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e28e19f5-12af-4a60-a438-74e1a77f8a97"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Space"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -762,6 +782,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Keys_Point = m_Keys.FindAction("Point", throwIfNotFound: true);
         m_Keys_Slach = m_Keys.FindAction("Slach", throwIfNotFound: true);
         m_Keys_Exclamation = m_Keys.FindAction("Exclamation", throwIfNotFound: true);
+        m_Keys_Space = m_Keys.FindAction("Space", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -855,6 +876,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Keys_Point;
     private readonly InputAction m_Keys_Slach;
     private readonly InputAction m_Keys_Exclamation;
+    private readonly InputAction m_Keys_Space;
     public struct KeysActions
     {
         private @Controls m_Wrapper;
@@ -893,6 +915,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Point => m_Wrapper.m_Keys_Point;
         public InputAction @Slach => m_Wrapper.m_Keys_Slach;
         public InputAction @Exclamation => m_Wrapper.m_Keys_Exclamation;
+        public InputAction @Space => m_Wrapper.m_Keys_Space;
         public InputActionMap Get() { return m_Wrapper.m_Keys; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1004,6 +1027,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Exclamation.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnExclamation;
                 @Exclamation.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnExclamation;
                 @Exclamation.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnExclamation;
+                @Space.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnSpace;
+                @Space.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnSpace;
+                @Space.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnSpace;
             }
             m_Wrapper.m_KeysActionsCallbackInterface = instance;
             if (instance != null)
@@ -1110,6 +1136,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Exclamation.started += instance.OnExclamation;
                 @Exclamation.performed += instance.OnExclamation;
                 @Exclamation.canceled += instance.OnExclamation;
+                @Space.started += instance.OnSpace;
+                @Space.performed += instance.OnSpace;
+                @Space.canceled += instance.OnSpace;
             }
         }
     }
@@ -1159,5 +1188,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnPoint(InputAction.CallbackContext context);
         void OnSlach(InputAction.CallbackContext context);
         void OnExclamation(InputAction.CallbackContext context);
+        void OnSpace(InputAction.CallbackContext context);
     }
 }

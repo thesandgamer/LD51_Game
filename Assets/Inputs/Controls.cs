@@ -134,6 +134,204 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Q"",
+                    ""type"": ""Button"",
+                    ""id"": ""72a4bb31-4631-44e7-bd03-5c686ae5e3a1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""S"",
+                    ""type"": ""Button"",
+                    ""id"": ""cff72646-2665-4fa6-9ac5-a93b7fd711b9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""D"",
+                    ""type"": ""Button"",
+                    ""id"": ""29d177b5-12cd-4533-8c08-e27864423757"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""F"",
+                    ""type"": ""Button"",
+                    ""id"": ""b87b54ea-b77c-470d-bcdf-9ec494701f60"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""G"",
+                    ""type"": ""Button"",
+                    ""id"": ""dc6dd646-448b-41fe-b2d1-1fd98e15042f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""H"",
+                    ""type"": ""Button"",
+                    ""id"": ""f7c5d0ea-c7bf-4444-924f-6b3a32d2da80"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""J"",
+                    ""type"": ""Button"",
+                    ""id"": ""17cf164e-8bae-4ebb-9a27-cf02e3c6ebfa"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""K"",
+                    ""type"": ""Button"",
+                    ""id"": ""556d178f-e79b-4085-a562-4d354ffdc133"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""L"",
+                    ""type"": ""Button"",
+                    ""id"": ""62f79acc-1736-4a23-aba8-07f73e77e98c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""M"",
+                    ""type"": ""Button"",
+                    ""id"": ""728cfe2b-b971-432d-88c3-34e5e3a34d9b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Percent"",
+                    ""type"": ""Button"",
+                    ""id"": ""2989639b-5dca-403b-a203-20a1c5cea953"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Star"",
+                    ""type"": ""Button"",
+                    ""id"": ""fe84c452-75ab-4a66-b6a0-809042ad939e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""W"",
+                    ""type"": ""Button"",
+                    ""id"": ""0247bc22-eb51-4ae5-8f09-b36bef2e5f83"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""X"",
+                    ""type"": ""Button"",
+                    ""id"": ""08385a3a-5938-4303-b026-ab177d734a1f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""C"",
+                    ""type"": ""Button"",
+                    ""id"": ""5f60dcb8-5553-4939-9f6e-2712e6076a9d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""V"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8303863-f7c9-4b1e-b4c9-dd6acdd93061"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""B"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d368ccb-0bb6-402e-abc9-3cf9799ab6d7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""N"",
+                    ""type"": ""Button"",
+                    ""id"": ""c30a9451-7d75-4432-9546-40e53cee9c86"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interogation"",
+                    ""type"": ""Button"",
+                    ""id"": ""6be169a8-55c5-4ac9-9d68-67b198c1feed"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Point"",
+                    ""type"": ""Button"",
+                    ""id"": ""4ee3fee9-3c8b-4029-9a09-6aea82912729"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Slach"",
+                    ""type"": ""Button"",
+                    ""id"": ""1039f965-cf82-40e8-9f8d-19b0abfd3685"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Exclamation"",
+                    ""type"": ""Button"",
+                    ""id"": ""e70956e1-ed94-40d3-8ced-f8ca7ad81753"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -268,6 +466,248 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""Dollard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b324dd2-0b93-4d94-b755-1bf85659aa1c"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Q"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba7db02c-ab60-4eb1-816f-c4d18ffd26c1"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""S"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b94d535d-0539-400f-9660-28fbddf93636"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""169f67fd-5cbb-4441-a1c4-811a18d3f0fb"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""F"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""37c2e057-8752-4438-9d35-182ec8671e90"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""G"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bbeae161-bb46-4541-8b18-34b14610ad48"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""H"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7772518-f849-40e5-b09b-daf95d59f840"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""J"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bbd35377-941e-4363-b455-448fe5314a42"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""K"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""55c09607-c3c8-4462-b2dd-f0a9ff11a9b9"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""L"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""04f62b86-b42a-4e40-bc55-7d03d523e5a6"",
+                    ""path"": ""<Keyboard>/semicolon"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""M"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab9723a0-2a82-4c4b-bf66-952e16fe43dd"",
+                    ""path"": ""<Keyboard>/quote"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Percent"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b1ad5f9d-f4b3-486d-9102-885514f513c8"",
+                    ""path"": ""<Keyboard>/backslash"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Star"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e028a220-bd32-46b8-b640-a9bc66673579"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""W"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2fa9555-ebeb-45ca-a8a7-fe5125736473"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""X"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""657c9781-6e46-45c9-af31-9775fbd59367"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""C"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""82a099ed-23d5-44a1-8440-a993d394169e"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""V"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac08d826-4245-4028-a3a5-df536cff38e0"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""B"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d8f8f11e-fbca-4cd8-b367-131754af7b77"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""N"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5a4a3b68-53c8-4e8f-85c6-809dfd327846"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Interogation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eba22db2-35a7-4eee-b685-8e4f7f036002"",
+                    ""path"": ""<Keyboard>/comma"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Point"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""db2121da-b237-4d6a-8856-e51ceb43ed67"",
+                    ""path"": ""<Keyboard>/period"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Slach"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7871b39a-8c07-41b2-850e-0d11518756bd"",
+                    ""path"": ""<Keyboard>/slash"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Exclamation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -300,6 +740,28 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Keys_P = m_Keys.FindAction("P", throwIfNotFound: true);
         m_Keys_Circonflexe = m_Keys.FindAction("Circonflexe", throwIfNotFound: true);
         m_Keys_Dollard = m_Keys.FindAction("Dollard", throwIfNotFound: true);
+        m_Keys_Q = m_Keys.FindAction("Q", throwIfNotFound: true);
+        m_Keys_S = m_Keys.FindAction("S", throwIfNotFound: true);
+        m_Keys_D = m_Keys.FindAction("D", throwIfNotFound: true);
+        m_Keys_F = m_Keys.FindAction("F", throwIfNotFound: true);
+        m_Keys_G = m_Keys.FindAction("G", throwIfNotFound: true);
+        m_Keys_H = m_Keys.FindAction("H", throwIfNotFound: true);
+        m_Keys_J = m_Keys.FindAction("J", throwIfNotFound: true);
+        m_Keys_K = m_Keys.FindAction("K", throwIfNotFound: true);
+        m_Keys_L = m_Keys.FindAction("L", throwIfNotFound: true);
+        m_Keys_M = m_Keys.FindAction("M", throwIfNotFound: true);
+        m_Keys_Percent = m_Keys.FindAction("Percent", throwIfNotFound: true);
+        m_Keys_Star = m_Keys.FindAction("Star", throwIfNotFound: true);
+        m_Keys_W = m_Keys.FindAction("W", throwIfNotFound: true);
+        m_Keys_X = m_Keys.FindAction("X", throwIfNotFound: true);
+        m_Keys_C = m_Keys.FindAction("C", throwIfNotFound: true);
+        m_Keys_V = m_Keys.FindAction("V", throwIfNotFound: true);
+        m_Keys_B = m_Keys.FindAction("B", throwIfNotFound: true);
+        m_Keys_N = m_Keys.FindAction("N", throwIfNotFound: true);
+        m_Keys_Interogation = m_Keys.FindAction("Interogation", throwIfNotFound: true);
+        m_Keys_Point = m_Keys.FindAction("Point", throwIfNotFound: true);
+        m_Keys_Slach = m_Keys.FindAction("Slach", throwIfNotFound: true);
+        m_Keys_Exclamation = m_Keys.FindAction("Exclamation", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -371,6 +833,28 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Keys_P;
     private readonly InputAction m_Keys_Circonflexe;
     private readonly InputAction m_Keys_Dollard;
+    private readonly InputAction m_Keys_Q;
+    private readonly InputAction m_Keys_S;
+    private readonly InputAction m_Keys_D;
+    private readonly InputAction m_Keys_F;
+    private readonly InputAction m_Keys_G;
+    private readonly InputAction m_Keys_H;
+    private readonly InputAction m_Keys_J;
+    private readonly InputAction m_Keys_K;
+    private readonly InputAction m_Keys_L;
+    private readonly InputAction m_Keys_M;
+    private readonly InputAction m_Keys_Percent;
+    private readonly InputAction m_Keys_Star;
+    private readonly InputAction m_Keys_W;
+    private readonly InputAction m_Keys_X;
+    private readonly InputAction m_Keys_C;
+    private readonly InputAction m_Keys_V;
+    private readonly InputAction m_Keys_B;
+    private readonly InputAction m_Keys_N;
+    private readonly InputAction m_Keys_Interogation;
+    private readonly InputAction m_Keys_Point;
+    private readonly InputAction m_Keys_Slach;
+    private readonly InputAction m_Keys_Exclamation;
     public struct KeysActions
     {
         private @Controls m_Wrapper;
@@ -387,6 +871,28 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @P => m_Wrapper.m_Keys_P;
         public InputAction @Circonflexe => m_Wrapper.m_Keys_Circonflexe;
         public InputAction @Dollard => m_Wrapper.m_Keys_Dollard;
+        public InputAction @Q => m_Wrapper.m_Keys_Q;
+        public InputAction @S => m_Wrapper.m_Keys_S;
+        public InputAction @D => m_Wrapper.m_Keys_D;
+        public InputAction @F => m_Wrapper.m_Keys_F;
+        public InputAction @G => m_Wrapper.m_Keys_G;
+        public InputAction @H => m_Wrapper.m_Keys_H;
+        public InputAction @J => m_Wrapper.m_Keys_J;
+        public InputAction @K => m_Wrapper.m_Keys_K;
+        public InputAction @L => m_Wrapper.m_Keys_L;
+        public InputAction @M => m_Wrapper.m_Keys_M;
+        public InputAction @Percent => m_Wrapper.m_Keys_Percent;
+        public InputAction @Star => m_Wrapper.m_Keys_Star;
+        public InputAction @W => m_Wrapper.m_Keys_W;
+        public InputAction @X => m_Wrapper.m_Keys_X;
+        public InputAction @C => m_Wrapper.m_Keys_C;
+        public InputAction @V => m_Wrapper.m_Keys_V;
+        public InputAction @B => m_Wrapper.m_Keys_B;
+        public InputAction @N => m_Wrapper.m_Keys_N;
+        public InputAction @Interogation => m_Wrapper.m_Keys_Interogation;
+        public InputAction @Point => m_Wrapper.m_Keys_Point;
+        public InputAction @Slach => m_Wrapper.m_Keys_Slach;
+        public InputAction @Exclamation => m_Wrapper.m_Keys_Exclamation;
         public InputActionMap Get() { return m_Wrapper.m_Keys; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -432,6 +938,72 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Dollard.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnDollard;
                 @Dollard.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnDollard;
                 @Dollard.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnDollard;
+                @Q.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnQ;
+                @Q.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnQ;
+                @Q.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnQ;
+                @S.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnS;
+                @S.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnS;
+                @S.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnS;
+                @D.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnD;
+                @D.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnD;
+                @D.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnD;
+                @F.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnF;
+                @F.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnF;
+                @F.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnF;
+                @G.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnG;
+                @G.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnG;
+                @G.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnG;
+                @H.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnH;
+                @H.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnH;
+                @H.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnH;
+                @J.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnJ;
+                @J.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnJ;
+                @J.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnJ;
+                @K.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnK;
+                @K.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnK;
+                @K.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnK;
+                @L.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnL;
+                @L.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnL;
+                @L.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnL;
+                @M.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnM;
+                @M.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnM;
+                @M.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnM;
+                @Percent.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnPercent;
+                @Percent.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnPercent;
+                @Percent.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnPercent;
+                @Star.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnStar;
+                @Star.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnStar;
+                @Star.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnStar;
+                @W.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnW;
+                @W.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnW;
+                @W.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnW;
+                @X.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnX;
+                @X.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnX;
+                @X.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnX;
+                @C.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnC;
+                @C.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnC;
+                @C.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnC;
+                @V.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnV;
+                @V.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnV;
+                @V.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnV;
+                @B.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnB;
+                @B.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnB;
+                @B.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnB;
+                @N.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnN;
+                @N.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnN;
+                @N.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnN;
+                @Interogation.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnInterogation;
+                @Interogation.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnInterogation;
+                @Interogation.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnInterogation;
+                @Point.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnPoint;
+                @Point.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnPoint;
+                @Point.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnPoint;
+                @Slach.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnSlach;
+                @Slach.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnSlach;
+                @Slach.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnSlach;
+                @Exclamation.started -= m_Wrapper.m_KeysActionsCallbackInterface.OnExclamation;
+                @Exclamation.performed -= m_Wrapper.m_KeysActionsCallbackInterface.OnExclamation;
+                @Exclamation.canceled -= m_Wrapper.m_KeysActionsCallbackInterface.OnExclamation;
             }
             m_Wrapper.m_KeysActionsCallbackInterface = instance;
             if (instance != null)
@@ -472,6 +1044,72 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Dollard.started += instance.OnDollard;
                 @Dollard.performed += instance.OnDollard;
                 @Dollard.canceled += instance.OnDollard;
+                @Q.started += instance.OnQ;
+                @Q.performed += instance.OnQ;
+                @Q.canceled += instance.OnQ;
+                @S.started += instance.OnS;
+                @S.performed += instance.OnS;
+                @S.canceled += instance.OnS;
+                @D.started += instance.OnD;
+                @D.performed += instance.OnD;
+                @D.canceled += instance.OnD;
+                @F.started += instance.OnF;
+                @F.performed += instance.OnF;
+                @F.canceled += instance.OnF;
+                @G.started += instance.OnG;
+                @G.performed += instance.OnG;
+                @G.canceled += instance.OnG;
+                @H.started += instance.OnH;
+                @H.performed += instance.OnH;
+                @H.canceled += instance.OnH;
+                @J.started += instance.OnJ;
+                @J.performed += instance.OnJ;
+                @J.canceled += instance.OnJ;
+                @K.started += instance.OnK;
+                @K.performed += instance.OnK;
+                @K.canceled += instance.OnK;
+                @L.started += instance.OnL;
+                @L.performed += instance.OnL;
+                @L.canceled += instance.OnL;
+                @M.started += instance.OnM;
+                @M.performed += instance.OnM;
+                @M.canceled += instance.OnM;
+                @Percent.started += instance.OnPercent;
+                @Percent.performed += instance.OnPercent;
+                @Percent.canceled += instance.OnPercent;
+                @Star.started += instance.OnStar;
+                @Star.performed += instance.OnStar;
+                @Star.canceled += instance.OnStar;
+                @W.started += instance.OnW;
+                @W.performed += instance.OnW;
+                @W.canceled += instance.OnW;
+                @X.started += instance.OnX;
+                @X.performed += instance.OnX;
+                @X.canceled += instance.OnX;
+                @C.started += instance.OnC;
+                @C.performed += instance.OnC;
+                @C.canceled += instance.OnC;
+                @V.started += instance.OnV;
+                @V.performed += instance.OnV;
+                @V.canceled += instance.OnV;
+                @B.started += instance.OnB;
+                @B.performed += instance.OnB;
+                @B.canceled += instance.OnB;
+                @N.started += instance.OnN;
+                @N.performed += instance.OnN;
+                @N.canceled += instance.OnN;
+                @Interogation.started += instance.OnInterogation;
+                @Interogation.performed += instance.OnInterogation;
+                @Interogation.canceled += instance.OnInterogation;
+                @Point.started += instance.OnPoint;
+                @Point.performed += instance.OnPoint;
+                @Point.canceled += instance.OnPoint;
+                @Slach.started += instance.OnSlach;
+                @Slach.performed += instance.OnSlach;
+                @Slach.canceled += instance.OnSlach;
+                @Exclamation.started += instance.OnExclamation;
+                @Exclamation.performed += instance.OnExclamation;
+                @Exclamation.canceled += instance.OnExclamation;
             }
         }
     }
@@ -499,5 +1137,27 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnP(InputAction.CallbackContext context);
         void OnCirconflexe(InputAction.CallbackContext context);
         void OnDollard(InputAction.CallbackContext context);
+        void OnQ(InputAction.CallbackContext context);
+        void OnS(InputAction.CallbackContext context);
+        void OnD(InputAction.CallbackContext context);
+        void OnF(InputAction.CallbackContext context);
+        void OnG(InputAction.CallbackContext context);
+        void OnH(InputAction.CallbackContext context);
+        void OnJ(InputAction.CallbackContext context);
+        void OnK(InputAction.CallbackContext context);
+        void OnL(InputAction.CallbackContext context);
+        void OnM(InputAction.CallbackContext context);
+        void OnPercent(InputAction.CallbackContext context);
+        void OnStar(InputAction.CallbackContext context);
+        void OnW(InputAction.CallbackContext context);
+        void OnX(InputAction.CallbackContext context);
+        void OnC(InputAction.CallbackContext context);
+        void OnV(InputAction.CallbackContext context);
+        void OnB(InputAction.CallbackContext context);
+        void OnN(InputAction.CallbackContext context);
+        void OnInterogation(InputAction.CallbackContext context);
+        void OnPoint(InputAction.CallbackContext context);
+        void OnSlach(InputAction.CallbackContext context);
+        void OnExclamation(InputAction.CallbackContext context);
     }
 }

@@ -20,7 +20,12 @@ public class Scr_GameKeyManager : MonoBehaviour
     private float hoverdedPos;
 
     private bool isDown = false;
-    
+
+    private int id;
+    private List<int> leanIds;
+
+
+
     private void Start()
     {
         if (_manager)
@@ -34,54 +39,77 @@ public class Scr_GameKeyManager : MonoBehaviour
 
     public void PressKey()
     {
-        LeanTween.moveY(gameObject, downPos, 0.5f).setEaseOutQuint();
+        id = LeanTween.moveY(gameObject, downPos, 0.5f).setEaseOutQuint().id;
+        
         PressVoisins();
-        isDown = false;
     }
 
     public void ReleaseKey()
     {
         LeanTween.cancel(gameObject);
-        LeanTween.moveY(gameObject, baseY, 0.5f).setEaseOutElastic();
+        //LeanTween.cancelAll();
+        //CancelLeantween();
+        id = LeanTween.moveY(gameObject, baseY, 0.4f).setEaseOutElastic().id;
+
         ReleaseVoisins();
     }
 
+    //Fonction qui va presser tout les voisins
     private void PressVoisins()
     {
-        foreach (var voisin in voisins )
+        foreach (var voisin in voisins )//Pour chaque voisin
         {
-            voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();
+            LeanTween.cancel(voisin); //Si il y a un tweening de lancé, on l'arrète
+
+            voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();//Fait en sorte que ça appui sur le voisin
             voisin.GetComponent<Scr_GameKeyManager>().isDown = true;
         }
        
 
     }
+    
+    //Fonction qui va relacher de hover les touches voisines de celle ci
     private void ReleaseVoisins()
     {
-        foreach (var voisin in voisins )
+        foreach (var voisin in voisins )//Pour chaque voisin
         {
-            voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();
-            voisin.GetComponent<Scr_GameKeyManager>().isDown = false;
+            LeanTween.cancel(voisin);
+
+            voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();   //Fait en sorte que le voisin se relache
+            voisin.GetComponent<Scr_GameKeyManager>().isDown = false;//
+            
 
         }
     }
+
 
     public void VoisinKeyIsDowning()
     {
         //if (isDown) return;
 
-        LeanTween.moveY(gameObject, hoverdedPos, 0.5f).setEaseOutQuint();
+        id = LeanTween.moveY(gameObject, hoverdedPos, 0.5f).setEaseOutQuint().id;
     }
     public void VoisinKeyIsReleasing()
     {
         //if (isDown) return;
 
         LeanTween.cancel(gameObject);
-        LeanTween.moveY(gameObject, baseY, 0.5f).setEaseOutElastic();
+        id = LeanTween.moveY(gameObject, baseY, 0.5f).setEaseOutElastic().id;
+
     }
 
     public void ActivateKey()
     {
+    }
+
+
+    public void CancelLeantween()
+    {
+        foreach (var leanId in leanIds)
+        {
+            LeanTween.cancel(leanId);
+        }
+        leanIds.Clear();
     }
     
 }

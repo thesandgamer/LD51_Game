@@ -31,7 +31,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     public bool keyPressed = false;
 
     private InputAction.CallbackContext currentInput;
-    
+
 
     private void Awake()
     {
@@ -113,7 +113,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
         controls.Keys.Star.started += StartPressKeyStar;
         controls.Keys.Star.canceled += StopPressKeyStar;
-        
+
         //---------------
         controls.Keys.W.started += StartPressKeyW;
         controls.Keys.W.canceled += StopPressKeyW;
@@ -144,11 +144,9 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
         controls.Keys.Exclamation.started += StartPressKeyExclamation;
         controls.Keys.Exclamation.canceled += StopPressKeyExclamation;
-        
+
         //-----------
         controls.Keys.Space.performed += SpaceBarPressed;
-
-
     }
 
     private void SpaceBarPressed(InputAction.CallbackContext obj)
@@ -224,7 +222,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
         go.name += "_" + keyPos + "_" + keyRow;
         go.GetComponent<Scr_GameKeyManager>().posInKeyboard = new Vector2(keyPos, keyRow - 1);
         go.GetComponent<Scr_GameKeyManager>()._manager = this;
-        
+
         inGameKeys.Add(go);
         dicMap.Add(new Vector2(keyPos, keyRow - 1), go);
     }
@@ -252,7 +250,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
         {
             for (int x = -1; x < 2; x++)
             {
-                Vector2 voisinPos = new Vector2(pos.x+x, pos.y+y);
+                Vector2 voisinPos = new Vector2(pos.x + x, pos.y + y);
                 if (voisinPos != pos)
                 {
                     if (dicMap.ContainsKey(voisinPos))
@@ -260,21 +258,49 @@ public class Scr_GameKeyboardManager : MonoBehaviour
                         voisins.Add(dicMap[voisinPos]);
                     }
                 }
-
             }
         }
+
         return voisins;
     }
+
+    private float elapsedTime = 0f;
+    [SerializeField] private float timeLongToPress = 0.3f;
+
+
 
     private void Update()
     {
         if (currentInput.performed)
         {
+            elapsedTime += Time.deltaTime;
             keyPressed = true;
         }
         else
         {
+            //CheckIfPressLong();
             keyPressed = false;
+            elapsedTime = 0;
+
+           
+        }
+        
+        
+    }
+    
+    void CheckIfPressLong()
+    {
+        if (elapsedTime >= timeLongToPress)
+        {
+            keyIsPressedLongTime = true;
+            //print("Is ok");
+
+        }
+        else
+        {
+            keyIsPressedLongTime = false;
+
+
         }
     }
 
@@ -283,19 +309,45 @@ public class Scr_GameKeyboardManager : MonoBehaviour
         dicMap[key].GetComponent<Scr_GameKeyManager>().ActivateKey();
     }
 
+    private bool keyIsPressedLongTime = false;
+
     private void PressKey(Vector2 key, InputAction.CallbackContext obj)
     {
         if (keyPressed) return;
         currentInput = obj;
-        
+
         dicMap[key].GetComponent<Scr_GameKeyManager>().PressKey();
     }
 
     private void ReleaseKey(Vector2 key, InputAction.CallbackContext obj)
     {
-
         dicMap[key].GetComponent<Scr_GameKeyManager>().ReleaseKey();
+        
+        CheckIfPressLong();
+        if (keyIsPressedLongTime)
+        {
+            
+            if (dicMap[key].GetComponent<Scr_RessourceManager>().linkedRessources.Count > 0)
+            {
+                //print("Self movement");
+                dicMap[key].GetComponent<Scr_RessourceManager>().MoveRessourcesToSelf();
+            }
+            
+            foreach (var voisin in DetectVoisinOf(key)) //Pour chaque voisin de la case relaché
+            {
+                voisin.GetComponent<Scr_RessourceManager>().MoveRessources(dicMap[key]); //On va dire au ressources de bouger sur cette case
+            }
+            
+            
+            
+        }
 
+
+        /*
+        if (dicMap[key].GetComponent<Scr_RessourceManager>())
+        {
+            dicMap[key].GetComponent<Scr_RessourceManager>().MoveRessources(gameObject);
+        }*/
     }
 
     private void ActivateKeyA(InputAction.CallbackContext obj)
@@ -312,7 +364,6 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     private void StopPressteKeyA(InputAction.CallbackContext obj)
     {
         ReleaseKey(new Vector2(0, 0), obj);
-
     }
 
 //--------------------------------------------------
@@ -568,8 +619,8 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(11, 1), obj);
     }
-    
-    
+
+
 //--------------------------------------------------
     private void StartPressKeyW(InputAction.CallbackContext obj)
     {
@@ -580,6 +631,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(0, 2), obj);
     }
+
 //--------------------------------------------------
     private void StartPressKeyX(InputAction.CallbackContext obj)
     {
@@ -590,6 +642,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(1, 2), obj);
     }
+
 //--------------------------------------------------
     private void StartPressKeyC(InputAction.CallbackContext obj)
     {
@@ -600,6 +653,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(2, 2), obj);
     }
+
     //--------------------------------------------------
     private void StartPressKeyV(InputAction.CallbackContext obj)
     {
@@ -610,6 +664,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(3, 2), obj);
     }
+
 //--------------------------------------------------
     private void StartPressKeyB(InputAction.CallbackContext obj)
     {
@@ -620,6 +675,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(4, 2), obj);
     }
+
 //--------------------------------------------------
     private void StartPressKeyN(InputAction.CallbackContext obj)
     {
@@ -630,6 +686,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(5, 2), obj);
     }
+
     //--------------------------------------------------
     private void StartPressKeyInterogation(InputAction.CallbackContext obj)
     {
@@ -640,6 +697,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(6, 2), obj);
     }
+
     //--------------------------------------------------
     private void StartPressKeyPoint(InputAction.CallbackContext obj)
     {
@@ -650,6 +708,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(7, 2), obj);
     }
+
     //--------------------------------------------------
     private void StartPressKeySlach(InputAction.CallbackContext obj)
     {
@@ -660,6 +719,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(8, 2), obj);
     }
+
     //--------------------------------------------------
     private void StartPressKeyExclamation(InputAction.CallbackContext obj)
     {
@@ -670,6 +730,4 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     {
         ReleaseKey(new Vector2(9, 2), obj);
     }
-    
-    
 }

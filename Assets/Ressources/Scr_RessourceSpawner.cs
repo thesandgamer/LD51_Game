@@ -62,7 +62,7 @@ public class Scr_RessourceSpawner : MonoBehaviour
 
         if (!soundPlay)
         {
-            FindObjectOfType<scr_audioManager>().Play("Theme");
+            FindObjectOfType<scr_audioManager>()?.Play("Theme");
             soundPlay = true;
         }
     }

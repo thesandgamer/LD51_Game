@@ -62,7 +62,6 @@ public class Scr_Ressource : MonoBehaviour
 
     void CanMoveAgain()
     {
-        isMoving = false;
         if(keyToGo.GetComponent<Scr_GameKeyManager>())
             keyToGo.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();
         Invoke("Realease",0.1f);
@@ -73,6 +72,8 @@ public class Scr_Ressource : MonoBehaviour
         if(keyToGo.GetComponent<Scr_GameKeyManager>())
             keyToGo.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();
         keyToGo = null;
+        isMoving = false;
+
 
     }
 

@@ -40,4 +40,17 @@ public class scr_audioManager : MonoBehaviour
         }
        s.source.Play();
     }
+
+   public void Stop(string name)
+   {
+       scr_sounds s = Array.Find(sounds,sounds => sounds.name == name); // pas sur d'ici je me suis peut être embrouillé avec les noms 
+       if(s==null)
+       {
+           Debug.LogWarning("Sound:"+name+"not found !");
+           return;
+       }
+       s.source.Stop();
+       
+   }
+   
 }

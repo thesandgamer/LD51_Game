@@ -12,11 +12,13 @@ public class Editor_GameKeyboardManager : Editor
     public override void OnInspectorGUI()
     {
         Scr_GameKeyboardManager gameKeyboardManager = (Scr_GameKeyboardManager) target;
+        DrawDefaultInspector();
+        /*
         if (DrawDefaultInspector())
         {
             gameKeyboardManager.ClearKeys();
             gameKeyboardManager.GenerateKeyboard();
-        }
+        }*/
         GUILayout.Space(20);
         GUILayout.BeginHorizontal();
         if (GUILayout.Button("Spawn keyboard"))

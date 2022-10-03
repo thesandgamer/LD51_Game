@@ -29,10 +29,7 @@ public class scr_audioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
-    void Start()
-    {
-        Play("Theme");
-    }
+
    public void Play(string name)
     {
        scr_sounds s = Array.Find(sounds,sounds => sounds.name == name); // pas sur d'ici je me suis peut être embrouillé avec les noms 

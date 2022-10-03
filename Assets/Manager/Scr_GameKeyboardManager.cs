@@ -11,6 +11,39 @@ public enum EnterKeyType
     SMALL,
 }
 
+[Serializable]
+public struct KeyData
+{
+    public Vector2 keyPos;
+    public GameObject keyObject;
+
+    public KeyData(Vector2 posOfKey, GameObject objectOfKey)
+    {
+        this.keyPos = posOfKey;
+        this.keyObject = objectOfKey;
+    }
+}
+[Serializable]
+public class KeyList
+{
+    public List<KeyData> keys;
+
+    public GameObject Find(Vector2 pos)
+    {
+        GameObject go= new GameObject();
+        foreach (var key in keys)
+        {
+            if (key.keyPos == pos)
+            {
+                return key.keyObject;
+            }
+        }
+
+        return go;
+    }
+}
+
+
 public class Scr_GameKeyboardManager : MonoBehaviour
 {
     [SerializeField] private GameObject Prefab_GameKeyParent;
@@ -22,8 +55,9 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     public EnterKeyType TypeOfKeyboard = 0;
 
     public List<GameObject> inGameKeys = new List<GameObject>();
-
-    public Dictionary<Vector2, GameObject> dicMap = new Dictionary<Vector2, GameObject>();
+    [HideInInspector] public Dictionary<Vector2, GameObject> dicMap = new Dictionary<Vector2, GameObject>();
+    public KeyList keyMap ;
+    
     public GameObject spaceBarObj;
 
     public Controls controls;
@@ -36,7 +70,21 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     private void Awake()
     {
         controls = new Controls();
+        
+        foreach (var data in keyMap.keys)
+        {
+            dicMap.Add(data.keyPos,data.keyObject);
+        }
+       // GenerateKeyboard();
         SetupInputs();
+
+        
+        foreach (var VARIABLE in dicMap)
+        {
+            Debug.Log(VARIABLE.Key);
+
+        }
+        
     }
 
     private void SetupInputs()
@@ -156,11 +204,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
 
     #region CreateKeyboard
-
-    private void Start()
-    {
-        GenerateKeyboard();
-    }
+    
 
     private void OnEnable()
     {
@@ -175,6 +219,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
     public void GenerateKeyboard()
     {
         ClearKeys();
+        
 
         for (int i = 0; i < 12; i++)
         {
@@ -210,6 +255,12 @@ public class Scr_GameKeyboardManager : MonoBehaviour
             transform.position.z - 4 * InRowOffset);
         spaceBarObj = Instantiate(Prefab_SpaceBar, spaceBarPos, quaternion.identity, transform);
         inGameKeys.Add(spaceBarObj);
+        
+        foreach (var VARIABLE in dicMap)
+        {
+            Debug.Log(VARIABLE.Key);
+
+        }
     }
 
 
@@ -225,6 +276,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
         inGameKeys.Add(go);
         dicMap.Add(new Vector2(keyPos, keyRow - 1), go);
+        keyMap.keys.Add(new KeyData(new Vector2(keyPos, keyRow - 1),go));
     }
 
 
@@ -237,6 +289,7 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
         inGameKeys.Clear();
         dicMap.Clear();
+        keyMap.keys.Clear();
     }
 
     #endregion
@@ -313,6 +366,8 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
     private void PressKey(Vector2 key, InputAction.CallbackContext obj)
     {
+        if(! dicMap[key].GetComponent<Scr_GameKeyManager>().Interactible) return;
+
         if (keyPressed) return;
         currentInput = obj;
 
@@ -321,6 +376,8 @@ public class Scr_GameKeyboardManager : MonoBehaviour
 
     private void ReleaseKey(Vector2 key, InputAction.CallbackContext obj)
     {
+        if(! dicMap[key].GetComponent<Scr_GameKeyManager>().Interactible) return;
+        
         dicMap[key].GetComponent<Scr_GameKeyManager>().ReleaseKey();
         
         CheckIfPressLong();

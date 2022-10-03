@@ -10,6 +10,7 @@ public class Scr_Ressource : MonoBehaviour
     private Scr_GameKeyboardManager _manager;
 
     public AnimationCurve Curve;
+    [SerializeField] private float maxHauteur = 1f;
 
     private bool isMoving = false;
     
@@ -25,9 +26,10 @@ public class Scr_Ressource : MonoBehaviour
         if (isMoving) return;   //Si la ressources est déjà en mouvement 
         
         isMoving = true;
-        print("Ressource Move");
+       // print("Ressource Move");
         
-        position.GetComponent<Scr_RessourceManager>().linkedRessources.Add(gameObject);//On rajoute la ressource dans la liste des ressources de la touche où on va
+        if (position.GetComponent<Scr_RessourceManager>())
+            position.GetComponent<Scr_RessourceManager>().linkedRessources.Add(gameObject);//On rajoute la ressource dans la liste des ressources de la touche où on va
 
 
         transform.parent = position.transform.GetChild(0);
@@ -50,7 +52,7 @@ public class Scr_Ressource : MonoBehaviour
         print("Self movement");
 
         //LeanTween.moveLocalY(gameObject, 0f, 0.5f).setEase(Curve);
-        LeanTween.moveLocalY(gameObject, 1f, 0.25f).setEase(LeanTweenType.easeOutCirc);
+        LeanTween.moveLocalY(gameObject, maxHauteur, 0.25f).setEase(LeanTweenType.easeOutCirc);
         LeanTween.moveLocalY(gameObject, 0f, 0.25f).setEase(LeanTweenType.easeInSine).setDelay(0.25f).setOnComplete(CanMoveAgain);
 
         keyToGo = position;
@@ -61,14 +63,15 @@ public class Scr_Ressource : MonoBehaviour
     void CanMoveAgain()
     {
         isMoving = false;
-        
-        keyToGo.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();
+        if(keyToGo.GetComponent<Scr_GameKeyManager>())
+            keyToGo.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();
         Invoke("Realease",0.1f);
     }
 
     void Realease()
     {
-        keyToGo.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();
+        if(keyToGo.GetComponent<Scr_GameKeyManager>())
+            keyToGo.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();
         keyToGo = null;
 
     }

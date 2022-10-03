@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Scr_GameKeyManager : MonoBehaviour
 {
+    [Header("       Keyboard Creation")]
     public Vector2 posInKeyboard;
 
     private int moveTweenId;
@@ -14,6 +15,7 @@ public class Scr_GameKeyManager : MonoBehaviour
     public Scr_GameKeyboardManager _manager;
     private List<GameObject> voisins;
 
+    [Header("       Link to Keys")]
     [SerializeField] private float downDistance = 0.6f;
     [SerializeField] private float hoverdedDistance = 0.3f;
     private float downPos;
@@ -23,6 +25,8 @@ public class Scr_GameKeyManager : MonoBehaviour
 
     private int id;
     private List<int> leanIds;
+
+    public bool Interactible = true;
 
 
 
@@ -39,6 +43,8 @@ public class Scr_GameKeyManager : MonoBehaviour
 
     public void PressKey()
     {
+        if(!Interactible) return;
+        
         id = LeanTween.moveY(gameObject, downPos, 0.5f).setEaseOutQuint().id;
         
         PressVoisins();
@@ -46,6 +52,8 @@ public class Scr_GameKeyManager : MonoBehaviour
 
     public void ReleaseKey()
     {
+        if(!Interactible) return;
+
         LeanTween.cancel(gameObject);
         //LeanTween.cancelAll();
         //CancelLeantween();
@@ -57,26 +65,36 @@ public class Scr_GameKeyManager : MonoBehaviour
     //Fonction qui va presser tout les voisins
     private void PressVoisins()
     {
+
         foreach (var voisin in voisins )//Pour chaque voisin
         {
             LeanTween.cancel(voisin); //Si il y a un tweening de lancé, on l'arrète
 
-            voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();//Fait en sorte que ça appui sur le voisin
-            voisin.GetComponent<Scr_GameKeyManager>().isDown = true;
+            if (voisin.GetComponent<Scr_GameKeyManager>().Interactible)
+            {
+                voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsDowning();//Fait en sorte que ça appui sur le voisin
+                voisin.GetComponent<Scr_GameKeyManager>().isDown = true;
+            }
+
         }
        
 
     }
     
-    //Fonction qui va relacher de hover les touches voisines de celle ci
+    //Fonction qui va relacher de hover les touches voisins de celle ci
     private void ReleaseVoisins()
     {
         foreach (var voisin in voisins )//Pour chaque voisin
         {
-            LeanTween.cancel(voisin);
+            if (voisin.GetComponent<Scr_GameKeyManager>().Interactible)
+            {
+                LeanTween.cancel(voisin);
 
-            voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();   //Fait en sorte que le voisin se relache
-            voisin.GetComponent<Scr_GameKeyManager>().isDown = false;//
+                voisin.GetComponent<Scr_GameKeyManager>().VoisinKeyIsReleasing();   //Fait en sorte que le voisin se relache
+                voisin.GetComponent<Scr_GameKeyManager>().isDown = false;//
+            }
+
+            
             
 
         }
@@ -85,8 +103,6 @@ public class Scr_GameKeyManager : MonoBehaviour
 
     public void VoisinKeyIsDowning()
     {
-        //if (isDown) return;
-
         id = LeanTween.moveY(gameObject, hoverdedPos, 0.5f).setEaseOutQuint().id;
     }
     public void VoisinKeyIsReleasing()

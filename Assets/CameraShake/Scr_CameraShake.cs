@@ -20,7 +20,7 @@ public class Scr_CameraShake : MonoBehaviour
     public void StartCameraShake(Vector2 strength)
     {
         if (inShake) return;
-        print("Camera shake");
+        //print("Camera shake");
         LeanTween.moveX(cam.gameObject, initialPos.x + strength.x, 0.01f);
         LeanTween.moveY(cam.gameObject, initialPos.y +strength.y, 0.1f).setOnComplete(Deshake);
 

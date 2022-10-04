@@ -44,7 +44,8 @@ public class Scr_GameKeyManager : MonoBehaviour
     public void PressKey()
     {
         if(!Interactible) return;
-        
+        //LeanTween.cancel(gameObject);
+
         id = LeanTween.moveY(gameObject, downPos, 0.5f).setEaseOutQuint().id;
         
         PressVoisins();
@@ -103,6 +104,7 @@ public class Scr_GameKeyManager : MonoBehaviour
 
     public void VoisinKeyIsDowning()
     {
+        if (isDown) return;
         id = LeanTween.moveY(gameObject, hoverdedPos, 0.5f).setEaseOutQuint().id;
     }
     public void VoisinKeyIsReleasing()
